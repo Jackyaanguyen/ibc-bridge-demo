@@ -57,8 +57,8 @@ if [[ $DENOM == ${DENOMS[1]} ]]; then
   update_test_genesis '.app_state["interchainaccounts"]["host_genesis_state"]["params"]["allow_messages"]=["/ibc.applications.transfer.v1.MsgTransfer"]'
 fi
 
-$SED_BINARY -i '0,/enable = false/s//enable = true/' $HOME/config/app.toml
-$SED_BINARY -i 's/swagger = false/swagger = true/' $HOME/config/app.toml
+$SED_BINARY -i '0,/enable = false/s//enable = true/' $DIR/config/app.toml
+$SED_BINARY -i 's/swagger = false/swagger = true/' $DIR/config/app.toml
 $SED_BINARY -i 's/laddr = "tcp:\/\/127\.0\.0\.1:26657"/laddr = "tcp:\/\/0\.0\.0\.0:26657"/' $DIR/config/config.toml
 $SED_BINARY -i 's/node = "tcp:\/\/localhost:26657"/node = "tcp:\/\/0.0.0.0:26657"/' $DIR/config/client.toml
 
