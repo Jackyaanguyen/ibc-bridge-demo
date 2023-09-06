@@ -1,0 +1,11 @@
+{
+    "chain-binary": "aurad",
+    "chain-id": "test-aura",
+    "denom": "ueaura",
+    "prefix": "aura",
+    "addresses": [
+      "aura1xhs9wjfrf0znla9hv3wslhmnyj7t5mvwg29cy0",
+      "aura1w4j5wlz4zcr7nhuueunvvxues603jgklaeq56t"
+    ],
+    "node": "http://localhost:26657"
+  }

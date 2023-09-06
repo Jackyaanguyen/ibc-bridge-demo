@@ -2,7 +2,6 @@
 
 This repo has a set of scripts that establish an IBC bridge between two Cosmos chains with:
 * IBC capability
-* ICA capability (ICS-27)
 * Wasm capability
 
 ## Requirements
